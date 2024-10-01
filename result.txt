@@ -1,0 +1,58 @@
+expect:abcd
+   got:abcd
+expect:a
+   got:a
+expect:empty string
+   got:
+expect:EmptyCollectionException to be thrown
+EmptyCollectionException is caught
+[s858493@cisone cs2-lab5-Kananelo19]$ javac TicketCounter.java
+[s858493@cisone cs2-lab5-Kananelo19]$ java TicketCounter
+customers:0
+Number of cashiers: 1
+Average time: 5317
+
+customers:0
+Number of cashiers: 2
+Average time: 2325
+
+customers:0
+Number of cashiers: 3
+Average time: 1332
+
+customers:0
+Number of cashiers: 4
+Average time: 840
+customers:0
+Number of cashiers: 5
+Average time: 547
+
+customers:0
+Number of cashiers: 6
+Average time: 355
+
+customers:0
+Number of cashiers: 7
+Average time: 219
+
+customers:0
+Number of cashiers: 8
+Average time: 120
+
+customers:0
+Number of cashiers: 9
+Average time: 120
+
+customers:0
+Number of cashiers: 10
+Average time: 120
+
+
+
+The results make sense because the man who needs the program is trying to see how many
+cashiers he needs. Say he wants to get the average time at the register down to 120,
+he needs at least 8 cashiers working at a time. The customers come like a queue,
+at intervals of 15 seconds. Which is why a queue works, the new customers are added 
+and processed. And they use an average of 120 seconds for the customer to be processed.
+Therefore with at least 8 cashiers working at once, he will have enough workers
+to not have any wait times at the cashier.
